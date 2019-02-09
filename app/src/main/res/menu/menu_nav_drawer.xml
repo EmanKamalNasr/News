@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@mipmap/ic_home"
+            android:title="@string/home"></item>
+
+        <item
+            android:id="@+id/sport"
+            android:icon="@mipmap/ic_sport"
+            android:title="@string/sport"></item>
+
+        <item
+            android:id="@+id/music"
+            android:icon="@mipmap/ic_music"
+            android:title="@string/music"></item>
+
+        <item
+            android:id="@+id/film"
+            android:icon="@mipmap/ic_film"
+            android:title="@string/film"></item>
+
+        <item
+            android:id="@+id/politics"
+            android:icon="@mipmap/ic_politics"
+            android:title="@string/politics"></item>
+
+        <item
+            android:id="@+id/tech"
+            android:icon="@mipmap/ic_tech"
+            android:title="@string/tech"></item>
+
+        <item
+            android:id="@+id/business"
+            android:icon="@mipmap/ic_business"
+            android:title="@string/business"></item>
+    </group>
+</menu>
