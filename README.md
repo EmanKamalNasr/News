@@ -3,8 +3,10 @@ the goal is to display a list of recent news around the world from  https://open
 request and #GoogleGSON to parse the JSON data .
 
 # Note 
-To run the app you have to get your API_KEY from https://open-platform.theguardian.com/
-and you have to open your network connection !! 
+* To run the app you have to get your API_KEY from https://open-platform.theguardian.com/
+* you have to open your network connection !! 
+* MIN SDK --> API 21 (Lollipop)
+* target SDK--> API 27 (Oreo)
 ## steps: 
 * open https://open-platform.theguardian.com/access/
 * Register for getting your API KEY 
