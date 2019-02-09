@@ -14,6 +14,7 @@ To run the app you have to get your API_KEY from https://open-platform.theguardi
 # Demo :
 ![screenshot2](https://user-images.githubusercontent.com/21147699/52521429-baebe000-2c7f-11e9-8529-b21f14033ff7.jpg)
 ![screenshot1](https://user-images.githubusercontent.com/21147699/52521454-0acaa700-2c80-11e9-9434-19ee92349cd1.jpg)
+![news](https://user-images.githubusercontent.com/21147699/52521912-55035680-2c87-11e9-9114-c2f67e25075a.png)
 
 # Video :
 [Demo](https://youtu.be/BlJJVjiWMUY)
