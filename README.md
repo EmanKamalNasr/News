@@ -4,6 +4,7 @@ request and #GoogleGSON to parse the JSON data .
 
 # Note 
 To run the app you have to get your API_KEY from https://open-platform.theguardian.com/
+and you have to open your network connection !! 
 ## steps: 
 * open https://open-platform.theguardian.com/access/
 * Register for getting your API KEY 
