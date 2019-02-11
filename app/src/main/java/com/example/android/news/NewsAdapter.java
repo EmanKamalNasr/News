@@ -34,15 +34,13 @@ import models.Article;
  */
 
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder>
-        implements Filterable {
+         {
     private List<Article> articles;
-    private List<Article> articlesFull;
     private Context context;
     private View rootView;
 
     public NewsAdapter(List<Article> articles, Context context) {
         this.articles = articles;
-        articlesFull = new ArrayList<>(articles);
         this.context = context;
 
     }
@@ -116,36 +114,4 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder>
             sectionName_tv = itemView.findViewById(R.id.sectionName_tv);
         }
     }
-
-    @Override
-    public Filter getFilter() {
-        return exampleFilter;
-    }
-
-    private Filter exampleFilter = new Filter() {
-        @Override
-        protected FilterResults performFiltering(CharSequence constraint) {
-            List<Article> filteredList = new ArrayList<>();
-            if (constraint == null || constraint.length() == 0) {
-                filteredList.addAll(articlesFull);
-            } else {
-                String filterPattern = constraint.toString().toLowerCase().trim();
-                for (Article article : articlesFull) {
-                    if (article.getField().getNewsTitle().toLowerCase().contains(filterPattern)) {
-                        filteredList.add(article);
-                    }
-                }
-            }
-            FilterResults results = new FilterResults();
-            results.values = filteredList;
-            return results;
-        }
-
-        @Override
-        protected void publishResults(CharSequence constraint, FilterResults results) {
-            articles.clear();
-            articles.addAll((List) results.values);
-            notifyDataSetChanged();
-        }
-    };
 }
